@@ -9,10 +9,10 @@ import (
 func Provider() *schema.Provider {
 	return &schema.Provider{
 		ResourcesMap: map[string]*schema.Resource{
-			"vscale_scalet":  resourceScalet(),
-			"vscale_ssh_key": resourceSSHKey(),
-			"vscale_domain":  resourceDomain(),
-			"vscale_record":  resourceRecord(),
+			"vscale-mod_scalet":  resourceScalet(),
+			"vscale-mod_ssh_key": resourceSSHKey(),
+			"vscale-mod_domain":  resourceDomain(),
+			"vscale-mod_record":  resourceRecord(),
 		},
 		Schema: map[string]*schema.Schema{
 			"token": &schema.Schema{
