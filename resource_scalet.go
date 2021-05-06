@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/pkg/errors"
 	vscale "github.com/vganyn/go-vscale"
 )
@@ -23,7 +23,7 @@ func resourceScalet() *schema.Resource {
 				Optional: true,
 				ForceNew: true,
 			},
-                        "name": &schema.Schema{
+			"name": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
 				ForceNew: true,
